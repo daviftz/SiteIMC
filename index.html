@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="index">
+        <div class="labels">
+            <label>Selecione sua altura: <output id="resultadoAltura"></output>m</label>
+                <input class="range" type="range" min="1.00" max="2.50" value="1.75" step="0.01" id="valorAltura"/>
+
+            <label>Selecione seu peso: <output id="resultadoPeso"></output>kg</label>
+                <input class="range" type="range" min="30" max="200" value="115" step="1" id="valorPeso">
+
+                <input type="submit" value="Enviar" class="BTNenviar" id="btnresultado" onclick="resultadoIMC">
+        </div>
+        <label id="resultado"></label>
+    </div>
+
+
+
+    <script src="js.js"></script>
+</body>
+</html>
